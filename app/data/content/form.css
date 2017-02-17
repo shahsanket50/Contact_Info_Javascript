@@ -34,3 +34,8 @@
 .chips md-icon.email {
     color: green;
 }
+
+.chips .errors {
+  font-size: 12px;
+  color: #dd2c00;
+  margin-top: 10px; }
