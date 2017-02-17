@@ -1,0 +1,36 @@
+.BasicForm {
+    
+}
+
+.primaryTabs {
+    min-height: 60px;
+}
+
+.input md-content{
+    padding-top: 15px;
+}
+
+.primaryTabs md-input-container:not(.md-input-invalid) > md-icon.organization {
+    color: green;
+}
+
+.primaryTabs md-input-container:not(.md-input-invalid) > md-icon.name {
+    color: dodgerblue;
+}
+
+.input md-input-container:not(.md-input-invalid) > md-icon.position {
+    color: red;
+}
+
+.primaryTabs md-input-container.md-input-invalid > md-icon.organization,
+.primaryTabs md-input-container.md-input-invalid > md-icon.name {
+    color: red;
+}
+
+.chips md-icon {
+    color: dodgerblue;
+}
+
+.chips md-icon.email {
+    color: green;
+}
