@@ -74,11 +74,11 @@ function PrimaryCtrl($scope) {
                 $scope.isTelephoneValid = false;
                 $scope.voiceTelephone.pop();
             }
-//        }
     };
     $scope.submitForm = function () {
         if ($scope.voiceTelephone.length != 0) {
-            
+            console.log("Hello");
+            writeTextFile("output.txt","Hello");
         }
     };
 }

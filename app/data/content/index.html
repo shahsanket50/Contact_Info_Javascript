@@ -15,215 +15,226 @@
     <link rel="stylesheet" href="form.css"> </head>
 
 <body class="BasicForm" ng-app="form" ng-controller="Ctrl as ctrl">
-<!--    Toolbar Contact Info-->
+    <!--    Toolbar Contact Info-->
     <md-toolbar class="md-primary">
         <div class="md-toolbar-tools">
             <h2 class="md-flex">Contact Information</h2> </div>
     </md-toolbar>
-    
     <form>
-          <div layout="row" layout-xs="column">
-        <div layout="column" flex="50">
-            <div ng-cloak class="card">
-                <md-card>
-                    <md-card-title>
-                        <md-card-title-text>
-                            <label class="md-headline">Primary Infomartion</label>
-                        </md-card-title-text>
-                    </md-card-title>
-                    <md-card-content>
-                        <div ng-cloak>
-                            <md-content>
-                                <md-tabs md-dynamic-height class="primaryTabs">
-                                    <md-tab label="Contact Person Primary">
-                                        <md-content class="md-padding">
-                                            <div layout="row" class="input">
-                                                <md-content class="md-no-momentum" flex-gt-sm>
-                                                    <md-input-container class="md-icon-float md-block">
-                                                        <md-icon md-svg-src="icons/ic_person_24px.svg" class="name"></md-icon>
-                                                        <input ng-model="user.name" type="text" placeholder="Name" ng-required="true" ng-pattern="/^([a-zA-Z][a-zA-Z]*[.]?[ ]?)*[a-zA-Z][a-zA-Z]*[.]?$/"> </md-input-container>
-                                                </md-content>
-                                                <md-content class="md-no-momentum" flex-gt-sm>
-                                                    <md-input-container class="md-icon-float md-block">
-                                                        <md-icon md-svg-src="icons/ic_people_24px.svg" class="organization"></md-icon>
-                                                        <input ng-model="user.organization" type="text" placeholder="Organisation" ng-pattern="/^([a-zA-Z0-9][a-zA-Z0-9]*[.]?[ ]?)*[a-zA-Z0-9][a-zA-Z0-9]*[.]?$/"> </md-input-container>
-                                                </md-content>
-                                            </div>
-                                        </md-content>
-                                    </md-tab>
-                                    <md-tab label="Contact Organization Primary">
-                                        <md-content class="md-padding">
-                                            <div layout="row" class="input">
-                                                <md-content class="md-no-momentum" flex>
-                                                    <md-input-container class="md-icon-float md-block">
-                                                        <md-icon md-svg-src="icons/ic_people_24px.svg" class="organization"></md-icon>
-                                                        <input ng-model="user.organization" type="text" placeholder="Organisation" ng-required="true" ng-pattern="/^([a-zA-Z0-9][a-zA-Z0-9]*[.]?[ ]?)*[a-zA-Z0-9][a-zA-Z0-9]*[.]?$/"> </md-input-container>
-                                                </md-content>
-                                                <md-content class="md-no-momentum" flex>
-                                                    <md-input-container class="md-icon-float md-block">
-                                                        <md-icon md-svg-src="icons/ic_person_24px.svg" class="name"></md-icon>
-                                                        <input ng-model="user.name" type="text" placeholder="Name" ng-pattern="/^([a-zA-Z][a-zA-Z]*[.]?[ ]?)*[a-zA-Z][a-zA-Z]*[.]?$/"> </md-input-container>
-                                                </md-content>
-                                            </div>
-                                        </md-content>
-                                    </md-tab>
-                                </md-tabs>
-                            </md-content>
-                            <div class="input">
-                                <md-content class="md-no-momentum" layout-gt-sm="row">
-                                    <md-input-container class="md-icon-float md-block">
-                                        <md-icon md-svg-src="icons/position.svg" class="position"></md-icon>
-                                        <input ng-model="user.position" type="text" placeholder="Position" ng-pattern="/^([a-zA-Z0-9][a-zA-Z0-9]*[.]?[ ]?)*[a-zA-Z0-9][a-zA-Z0-9]*[.]?$/"> </md-input-container>
+        <div layout="row" layout-xs="column">
+            <div layout="column" flex="50">
+                <div ng-cloak class="card">
+                    <md-card>
+                        <md-card-title>
+                            <md-card-title-text>
+                                <label class="md-headline">Primary Infomartion</label>
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-content>
+                            <div ng-cloak>
+                                <md-content>
+                                    <md-tabs md-dynamic-height class="primaryTabs">
+                                        <md-tab label="Contact Person Primary">
+                                            <md-content class="md-padding">
+                                                <div layout="row" class="input">
+                                                    <md-content class="md-no-momentum" flex-gt-sm>
+                                                        <md-input-container class="md-icon-float md-block">
+                                                            <md-icon md-svg-src="icons/ic_person_24px.svg" class="name"></md-icon>
+                                                            <input ng-model="user.name" type="text" placeholder="Name" ng-required="true" ng-pattern="/^([a-zA-Z][a-zA-Z]*[.]?[ ]?)*[a-zA-Z][a-zA-Z]*[.]?$/"> </md-input-container>
+                                                    </md-content>
+                                                    <md-content class="md-no-momentum" flex-gt-sm>
+                                                        <md-input-container class="md-icon-float md-block">
+                                                            <md-icon md-svg-src="icons/ic_people_24px.svg" class="organization"></md-icon>
+                                                            <input ng-model="user.organization" type="text" placeholder="Organisation" ng-pattern="/^([a-zA-Z0-9][a-zA-Z0-9]*[.]?[ ]?)*[a-zA-Z0-9][a-zA-Z0-9]*[.]?$/"> </md-input-container>
+                                                    </md-content>
+                                                </div>
+                                            </md-content>
+                                        </md-tab>
+                                        <md-tab label="Contact Organization Primary">
+                                            <md-content class="md-padding">
+                                                <div layout="row" class="input">
+                                                    <md-content class="md-no-momentum" flex>
+                                                        <md-input-container class="md-icon-float md-block">
+                                                            <md-icon md-svg-src="icons/ic_people_24px.svg" class="organization"></md-icon>
+                                                            <input ng-model="user.organization" type="text" placeholder="Organisation" ng-required="true" ng-pattern="/^([a-zA-Z0-9][a-zA-Z0-9]*[.]?[ ]?)*[a-zA-Z0-9][a-zA-Z0-9]*[.]?$/"> </md-input-container>
+                                                    </md-content>
+                                                    <md-content class="md-no-momentum" flex>
+                                                        <md-input-container class="md-icon-float md-block">
+                                                            <md-icon md-svg-src="icons/ic_person_24px.svg" class="name"></md-icon>
+                                                            <input ng-model="user.name" type="text" placeholder="Name" ng-pattern="/^([a-zA-Z][a-zA-Z]*[.]?[ ]?)*[a-zA-Z][a-zA-Z]*[.]?$/"> </md-input-container>
+                                                    </md-content>
+                                                </div>
+                                            </md-content>
+                                        </md-tab>
+                                    </md-tabs>
                                 </md-content>
+                                <div class="input">
+                                    <md-content class="md-no-momentum" layout-gt-sm="row">
+                                        <md-input-container class="md-icon-float md-block">
+                                            <md-icon md-svg-src="icons/position.svg" class="position"></md-icon>
+                                            <input ng-model="user.position" type="text" placeholder="Position" ng-pattern="/^([a-zA-Z0-9][a-zA-Z0-9]*[.]?[ ]?)*[a-zA-Z0-9][a-zA-Z0-9]*[.]?$/"> </md-input-container>
+                                    </md-content>
+                                </div>
                             </div>
-                        </div>
-                    </md-card-content>
-                </md-card>
-            </div>
-            <!-- Contact Details Form -->
-            <div layout="column" ng-cloak>
-                <md-card>
-                    <md-card-title>
-                        <md-card-title-text>
-                            <label class="contactChips md-headline">Contact Details</label>
-                        </md-card-title-text>
-                    </md-card-title>
-                    <md-card-content>
-                        <md-content class="md-padding" layout-gt-sm="column">
-                            <div class="chips" layout="column" class="input">
-                                <md-content class="md-padding" layout-gt-sm="column" layout-padding>
-                                    <div layout="row" class="input">
-                                        <md-icon md-svg-src="icons/ic_phone_24px.svg" class="voiceTelephone" flex></md-icon>
-                                        <md-chips ng-model="voiceTelephone" name="telephone" readonly="readonly" md-removable="removable" placeholder="Enter Voice Telephone *" flex="95" md-on-add="validateTelephone()"> </md-chips>
-                                    </div>
-<!--
+                        </md-card-content>
+                    </md-card>
+                </div>
+                <!-- Contact Details Form -->
+                <div layout="column" ng-cloak>
+                    <md-card>
+                        <md-card-title>
+                            <md-card-title-text>
+                                <label class="contactChips md-headline">Contact Details</label>
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-content>
+                            <md-content class="md-padding" layout-gt-sm="column">
+                                <div class="chips" layout="column" class="input">
+                                    <md-content class="md-padding" layout-gt-sm="column" layout-padding>
+                                        <div layout="row" class="input">
+                                            <md-icon md-svg-src="icons/ic_phone_24px.svg" class="voiceTelephone" flex></md-icon>
+                                            <md-chips ng-model="voiceTelephone" name="telephone" readonly="readonly" md-removable="removable" placeholder="Enter Voice Telephone *" flex="95" md-on-add="validateTelephone()"> </md-chips>
+                                        </div>
+                                        <!--
                                    <div class="errors" ng-messages="input.telephone.$error">
                                         <div ng-message="!isTelephoneValid">Enter a 10 digit Telephone.</div>
                                     </div>
 -->
-                                </md-content>
-                                <md-content class="md-padding" layout-gt-sm="column" layout-padding>
-                                    <div layout="row" class="input">
-                                        <md-icon md-svg-src="icons/ic_phone_24px.svg" class="tDDTelephone" flex></md-icon>
-                                        <md-chips ng-model="tDDTelephone" name="tDDTelephone" readonly="readonly" md-removable="removable" placeholder="Enter TDD/TTY Telephone" flex="95" ng-keypress="validateTelephone()"></md-chips>
-                                    </div>
-                                </md-content>
-                                <md-content class="md-padding" layout-gt-sm="column" layout-padding>
-                                    <div layout="row" class="input">
-                                        <md-icon md-svg-src="icons/ic_phone_24px.svg" class="facsimileTelephone" flex></md-icon>
-                                        <md-chips ng-model="facsimileTelephone" name="facsimileTelephone" readonly="readonly" md-removable="removable" placeholder="Enter Facsimile Telephone" flex="95" ng-keypress="validateTelephone()"> </md-chips>
-                                    </div>
-                                </md-content>
-                                <md-content layout-gt-sm="column" layout-padding>
-                                    <div layout="row" class="input">
-                                        <md-icon md-svg-src="icons/ic_email_24px.svg" class="email" flex></md-icon>
-                                        <md-chips ng-model="email" name="email" type="email" readonly="readonly" md-removable="removable" placeholder="Enter Email" ng-keypress="validateEmail()" flex="95" md-on-add="validateEmail()" required> </md-chips>
-                                    </div>
-                                </md-content>
-                            </div>
-                        </md-content>
-                    </md-card-content>
-                </md-card>
+                                    </md-content>
+                                    <md-content class="md-padding" layout-gt-sm="column" layout-padding>
+                                        <div layout="row" class="input">
+                                            <md-icon md-svg-src="icons/ic_phone_24px.svg" class="tDDTelephone" flex></md-icon>
+                                            <md-chips ng-model="tDDTelephone" name="tDDTelephone" readonly="readonly" md-removable="removable" placeholder="Enter TDD/TTY Telephone" flex="95" ng-keypress="validateTelephone()"></md-chips>
+                                        </div>
+                                    </md-content>
+                                    <md-content class="md-padding" layout-gt-sm="column" layout-padding>
+                                        <div layout="row" class="input">
+                                            <md-icon md-svg-src="icons/ic_phone_24px.svg" class="facsimileTelephone" flex></md-icon>
+                                            <md-chips ng-model="facsimileTelephone" name="facsimileTelephone" readonly="readonly" md-removable="removable" placeholder="Enter Facsimile Telephone" flex="95" ng-keypress="validateTelephone()"> </md-chips>
+                                        </div>
+                                    </md-content>
+                                    <md-content layout-gt-sm="column" layout-padding>
+                                        <div layout="row" class="input">
+                                            <md-icon md-svg-src="icons/ic_email_24px.svg" class="email" flex></md-icon>
+                                            <md-chips ng-model="email" name="email" type="email" readonly="readonly" md-removable="removable" placeholder="Enter Email" ng-keypress="validateEmail()" flex="95" md-on-add="validateEmail()" required> </md-chips>
+                                        </div>
+                                    </md-content>
+                                </div>
+                            </md-content>
+                        </md-card-content>
+                    </md-card>
+                </div>
             </div>
-        </div>
-        <!--     Address Form -->
-        <div layout="column" flex="50">
-            <div ng-cloak flex="90">
-                <md-card>
-                    <md-card-title>
-                        <md-card-title-text>
-                            <label class="md-headline">Address</label>
-                        </md-card-title-text>
-                    </md-card-title>
-                    <md-card-content>
-                        <div class="sample" layout="column" ng-cloak>
-                            <md-content>
-                                <md-tabs md-dynamic-height>
-                                    <md-tab ng-repeat="tab in addressTabs" ng-disabled="tab.disabled" label="{{tab.title}}">
-                                        <div>
-                                            <div layout="column">
-                                                <div layout="column" layout-sm="column">
-                                                    <md-content style="text-align:center" ng-show="tab.visible">
-                                                        <md-icon md-svg-src="icons/ic_place_24px.svg" class="address" style="color:green"></md-icon>
-                                                        <label class="md-title">Add a new Address:</label>
-                                                    </md-content>
-                                                    <md-content>
-                                                        <md-input-container class="md-block" flex>
-                                                            <div layout="row">
-                                                                <div flex="20">
-                                                                    <label>Address Type:</label>
+            <!--     Address Form -->
+            <div layout="column" flex="50">
+                <div ng-cloak flex="auto">
+                    <md-card>
+                        <md-card-title>
+                            <md-card-title-text>
+                                <label class="md-headline">Address</label>
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-content>
+                            <div class="sample" layout="column" ng-cloak>
+                                <md-content>
+                                    <md-tabs md-dynamic-height>
+                                        <md-tab ng-repeat="tab in addressTabs" ng-disabled="tab.disabled" label="{{tab.title}}">
+                                            <div>
+                                                <div layout="column">
+                                                    <div layout="column" layout-sm="column">
+                                                        <md-content style="text-align:center" ng-show="tab.visible">
+                                                            <md-icon md-svg-src="icons/ic_place_24px.svg" class="address" style="color:green"></md-icon>
+                                                            <label class="md-title">Add a new Address:</label>
+                                                        </md-content>
+                                                        <md-content>
+                                                            <md-input-container class="md-block" flex>
+                                                                <div layout="row">
+                                                                    <div flex="20">
+                                                                        <label>Address Type:</label>
+                                                                    </div>
+                                                                    <div flex="90">
+                                                                        <md-radio-group ng-model="tab.type" layout="row" name="type">
+                                                                            <md-radio-button value="Mailing" flex>Mailing</md-radio-button>
+                                                                            <md-radio-button value="Physical" flex>Physical</md-radio-button>
+                                                                            <md-radio-button value="Mailing & Physical" flex>Mailing & Physical</md-radio-button>
+                                                                        </md-radio-group>
+                                                                    </div>
                                                                 </div>
-                                                                <div flex="90">
-                                                                    <md-radio-group ng-model="tab.type" layout="row" name="type">
-                                                                        <md-radio-button value="Mailing" flex>Mailing</md-radio-button>
-                                                                        <md-radio-button value="Physical" flex>Physical</md-radio-button>
-                                                                        <md-radio-button value="Mailing & Physical" flex>Mailing & Physical</md-radio-button>
-                                                                    </md-radio-group>
-                                                                </div>
+                                                            </md-input-container>
+                                                            <div class="input" layout="row">
+                                                                <md-content class="md-no-momentum" class="input" layout="row" flex>
+                                                                    <md-input-container class="md-block">
+                                                                        <input ng-model="tab.street" placeholder="Street Name" ng-required="true" ng-pattern="/^([a-zA-Z0-9/-][a-zA-Z0-9/-]*[.]?[,]?[ ]?)*[a-zA-Z0-9/-][a-zA-Z0-9/-]*[.]?$/"> </md-input-container>
+                                                                </md-content>
+                                                                <md-content class="md-no-momentum" class="input" layout="row" flex>
+                                                                    <md-input-container class="md-block">
+                                                                        <input type="text" ng-model="tab.city" placeholder="City" ng-required="true" ng-pattern="/^([A-Z][a-zA-Z]*[.]?[ ]?)*[a-zA-Z][a-zA-Z]*[.]?$/"> </md-input-container>
+                                                                     </md-content>
                                                             </div>
-                                                        </md-input-container>
-                                                        <div class="input" layout="row">
-                                                            <md-input-container class="md-block" flex>
-                                                                <input ng-model="tab.street" placeholder="Street Name" ng-required="true" ng-pattern="/^([a-zA-Z0-9/-][a-zA-Z0-9/-]*[.]?[,]?[ ]?)*[a-zA-Z0-9/-][a-zA-Z0-9/-]*[.]?$/"> </md-input-container>
-                                                            <md-input-container class="md-block" flex>
-                                                                <input type="text" ng-model="tab.city" placeholder="City" ng-required="true" ng-pattern="/^([A-Z][a-zA-Z]*[.]?[ ]?)*[a-zA-Z][a-zA-Z]*[.]?$/"> </md-input-container>
-                                                        </div>
-                                                        <div class="input" layout="row">
-                                                            <md-input-container class="md-block" flex>
-                                                                <input type="text" ng-model="tab.state" placeholder="State" ng-required="true" ng-pattern="/^([A-Z][a-zA-Z]*[.]?[ ]?)*[a-zA-Z][a-zA-Z]*[.]?$/"> </md-input-container>
-                                                            <md-input-container class="md-block" flex>
-                                                                <input type="text" ng-model="tab.pincode" placeholder="PinCode" ng-required="true" ng-pattern="/^\d{6}$/"> </md-input-container>
-                                                        </div>
-                                                        <div class="input" layout="row">
-                                                            <md-input-container class="md-block" flex>
-                                                                <input type="text" ng-model="tab.country" placeholder="Country" ng-required="true" ng-pattern="/^([A-Z][a-zA-Z]*[.]?[ ]?)*[a-zA-Z][a-zA-Z]*[.]?$/"> </md-input-container>
-                                                            <div class="input" style="text-align:center" flex>
-                                                                <md-button class="add-tab md-primary md-raised" ng-disabled="!tab.type || !tab.street || !tab.city || !tab.state || !tab.country || !tab.pincode" ng-click="addTab(tab.type,tab.street,tab.city,tab.state,tab.country,tab.pincode)" ng-show="tab.visible">Add Address</md-button>
-                                                                <md-button class="md-primary md-raised" ng-click="removeTab( tab )" ng-hide="tab.visible">Remove Address</md-button>
+                                                            <div class="input" layout="row">
+                                                                <md-content class="md-no-momentum" flex>
+                                                                    <md-input-container class="md-block">
+                                                                        <input type="text" ng-model="tab.state" placeholder="State" ng-required="true" ng-pattern="/^([A-Z][a-zA-Z]*[.]?[ ]?)*[a-zA-Z][a-zA-Z]*[.]?$/"> </md-input-container>
+                                                                </md-content>
+                                                                <md-content class="md-no-momentum" flex>
+                                                                    <md-input-container class="md-block">
+                                                                        <input type="text" ng-model="tab.pincode" placeholder="PinCode" ng-required="true" ng-pattern="/^\d{6}$/"> </md-input-container>
+                                                                </md-content>
                                                             </div>
-                                                        </div>
-                                                    </md-content>
+                                                            <div class="input" layout="row">
+                                                                <md-content class="md-no-momentum" flex>
+                                                                    <md-input-container class="md-block">
+                                                                        <input type="text" ng-model="tab.country" placeholder="Country" ng-required="true" ng-pattern="/^([A-Z][a-zA-Z]*[.]?[ ]?)*[a-zA-Z][a-zA-Z]*[.]?$/"> </md-input-container>
+                                                                </md-content>
+                                                                    <md-content class="md-no-momentum" flex>
+                                                                            <div class="input" style="text-align:center">
+                                                                                <md-button class="add-tab md-primary md-raised" ng-disabled="!tab.type || !tab.street || !tab.city || !tab.state || !tab.country || !tab.pincode" ng-click="addTab(tab.type,tab.street,tab.city,tab.state,tab.country,tab.pincode)" ng-show="tab.visible">Add Address</md-button>
+                                                                                <md-button class="md-primary md-raised" ng-click="removeTab( tab )" ng-hide="tab.visible">Remove Address</md-button>
+                                                                            </div>
+                                                                        </md-content>
+                                                            </div>
+                                                            </md-content>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <br/> </div>
-                                    </md-tab>
-                                </md-tabs>
+                                                <br/> </div>
+                                        </md-tab>
+                                    </md-tabs>
+                                    </md-content>
+                            </div>
+                        </md-card-content>
+                    </md-card>
+                </div>
+                <!-- Service Info Form -->
+                <div class="service" flex="auto">
+                    <md-card>
+                        <md-card-title>
+                            <md-card-title-text>
+                                <label class="md-headline">Service Information </label>
+                            </md-card-title-text>
+                        </md-card-title>
+                        <md-card-content>
+                            <md-content layout-gt-sm="column">
+                                <md-content class="md-no-momentum">
+                                    <md-input-container class="md-icon-float md-block">
+                                        <md-icon md-svg-src="icons/clock.svg" class="name" style="color:brown"></md-icon>
+                                        <input ng-model="hours" type="text" placeholder="Hours of Service"> </md-input-container>
+                                </md-content>
+                                <md-content class="md-no-momentum">
+                                    <md-input-container class="md-icon-float md-block">
+                                        <md-icon md-svg-src="icons/check-list.svg" class="instruction" style="color:teal"></md-icon>
+                                        <textarea ng-model="instruction" type="text" placeholder="Instruction" columns='1' md-maxlength="150"> </textarea>
+                                    </md-input-container>
+                                </md-content>
                             </md-content>
-                        </div>
-                    </md-card-content>
-                </md-card>
+                        </md-card-content>
+                    </md-card>
+                </div>
             </div>
-            <!-- Service Info Form -->
-            <div flex="80">
-                <md-card>
-                    <md-card-title>
-                        <md-card-title-text>
-                            <label class="md-headline">Service Information </label>
-                        </md-card-title-text>
-                    </md-card-title>
-                    <md-card-content>
-                        <md-content layout-gt-sm="column">
-                            <md-content class="md-no-momentum">
-                                <md-input-container class="md-icon-float md-block">
-                                    <md-icon md-svg-src="icons/clock.svg" class="name" style="color:brown"></md-icon>
-                                    <input ng-model="hours" type="text" placeholder="Hours of Service" > </md-input-container>
-                            </md-content>
-                            <md-content class="md-no-momentum">
-                                <md-input-container class="md-icon-float md-block">
-                                    <md-icon md-svg-src="icons/check-list.svg" class="instruction" style="color:teal"></md-icon>
-                                    <textarea ng-model="instruction" type="text" placeholder="Instruction" columns='1' md-maxlength="150"> </textarea>
-                                </md-input-container>
-                            </md-content>
-                        </md-content>
-                    </md-card-content>
-                </md-card>
-            </div>
-        </div>
         </div>
         <div md-padding style="text-align:center">
-        <md-button class="md-primary md-raised" type="submit" ng-click="submitForm()">Save</md-button>
-        <md-button class="md-primary md-raised" ng-click="exit()">Exit</md-button>
-    </div>
+            <md-button class="md-primary md-raised" type="submit" ng-click="submitForm()">Save</md-button>
+            <md-button class="md-primary md-raised" ng-click="exit()">Exit</md-button>
+        </div>
     </form>
 </body>
 
